@@ -125,9 +125,9 @@
 }
 /* 多重阴影 */
 .box8{
-    text-shadow: 0px 0px 30px #1D96FB,
-                     0px 0px 30px #1D96FB,
-                     0px 0px 30px #1D96FB,
-                     0px 0px 30px #1D96FB,
-                     0px 0px 30px #1D96FB; 
+    text-shadow:0px 0px 30px #1D96FB,
+                0px 0px 30px #1D96FB,
+                0px 0px 30px #1D96FB,
+                0px 0px 30px #1D96FB,
+                0px 0px 30px #1D96FB; 
 }
