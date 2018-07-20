@@ -1,0 +1,133 @@
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+}
+@font-face{
+    font-family: '方正粗倩简体';
+    src:url('fonts/jiaicon.eot');
+    src:url('fonts/方正粗倩简体/方正粗倩简体.eot') format('embedded-opentype'),
+        url('fonts/方正粗倩简体/方正粗倩简体.woff') format('woff'),
+        url('fonts/方正粗倩简体/方正粗倩简体.TTF') format('truetype'),
+        url('fonts/方正粗倩简体/方正粗倩简体.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.common{
+    font-family: '方正粗倩简体';
+    font-size: 50px;
+    color: #FDF47D;
+    letter-spacing:5px;
+    /* 58C0F7  1D96FB */
+}
+/* 投影 */
+.box1{
+    /* color: transparent;
+    background-color : black;
+    text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+    -webkit-background-clip : text; */
+    text-shadow:8px 3px 1px #1D96FB;
+}
+/* 渐变 */
+.box2{
+    background: linear-gradient( to bottom, white, rgb(0, 174, 255));
+    -webkit-text-fill-color : transparent;
+    -webkit-background-clip : text;
+
+}
+/* 外发光 */
+.box3{
+    /* text-shadow:0 0 10px #00F; */
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
+}
+.box3:hover {
+    color: #fff;
+    -webkit-animation: Glow 1.5s ease infinite alternate;
+            animation: Glow 1.5s ease infinite alternate;
+
+}
+@-webkit-keyframes Glow {
+    from {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px #fff,
+                     0 0 40px #00a67c,
+                     0 0 70px #00a67c,
+                     0 0 80px #00a67c,
+                     0 0 100px #00a67c,
+                     0 0 150px #00a67c;
+    }
+    to {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 15px #fff,
+                     0 0 20px #00a67c,
+                     0 0 35px #00a67c,
+                     0 0 40px #00a67c,
+                     0 0 50px #00a67c,
+                     0 0 75px #00a67c;
+    }
+}
+@keyframes Glow {
+    from {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px #fff,
+                     0 0 40px #00a67c,
+                     0 0 70px #00a67c,
+                     0 0 80px #00a67c,
+                     0 0 100px #00a67c,
+                     0 0 150px #00a67c;
+    }
+    to {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 15px #fff,
+                     0 0 20px #00a67c,
+                     0 0 35px #00a67c,
+                     0 0 40px #00a67c,
+                     0 0 50px #00a67c,
+                     0 0 75px #00a67c;
+    }
+}
+/* 3D立体效果 */
+.box4{
+    color:#fefefe;
+    text-shadow:  
+    0px 1px 0px #c0c0c0,  
+    0px 2px 0px #b0b0b0,  
+    0px 3px 0px #a0a0a0,  
+    0px 4px 0px #909090,  
+    0px 5px 10px rgba(0, 0, 0, .9);  
+
+}
+/* 描边- 1D96FB */
+.box5{
+    -webkit-text-shadow:#1D96FB 2px 0 0,#2D96FB 0 2px 0,#2D96FB -2px 0 0,#2D96FB 0 -2px 0;  
+    -moz-text-shadow:#2D96FB 2px 0 0,#2D96FB 0 2px 0,#2D96FB -2px 0 0,#2D96FB 0 -2px 0;  
+    text-shadow:#2D96FB 2px 0 0,#2D96FB 0 2px 0,#2D96FB -2px 0 0,#2D96FB 0 -2px 0;   
+    *filter: Glow(Color=#1D96FB, Strength=1);   
+}
+/* 图片填充 */
+.box6{
+    font-weight: bold;
+    background:url("http://img07.tooopen.com/images/20180614/tooopen_sy_23054854878452.jpg") no-repeat left top; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+/* 浮雕效果 */
+.box7{
+    color: #ccc; text-shadow: -1px -1px #fff, 1px 1px #333;
+}
+/* 多重阴影 */
+.box8{
+    text-shadow: 0px 0px 30px #1D96FB,
+                     0px 0px 30px #1D96FB,
+                     0px 0px 30px #1D96FB,
+                     0px 0px 30px #1D96FB,
+                     0px 0px 30px #1D96FB; 
+}
